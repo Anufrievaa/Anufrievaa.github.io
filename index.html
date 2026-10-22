@@ -20,10 +20,9 @@
             background-color: var(--bg-color);
             color: var(--text-color);
             line-height: 1.6;
-            overflow-x: hidden; /* Чтобы анимации не создавали скролл */
+            overflow-x: hidden;
         }
-
-        /* --- АНИМАЦИИ --- */
+        
         @keyframes slideDown {
             from { opacity: 0; transform: translateY(-30px); }
             to { opacity: 1; transform: translateY(0); }
@@ -40,7 +39,7 @@
             100% { transform: translateY(0px); }
         }
 
-        /* --- ШАПКА --- */
+
         header {
             background-color: var(--hse-blue);
             color: white;
@@ -62,10 +61,9 @@
             opacity: 0.9;
             font-weight: 300;
             animation: slideDown 0.8s ease-out 0.2s forwards;
-            opacity: 0; /* Изначально скрыто для анимации */
+            opacity: 0;
         }
 
-        /* Та самая фраза на первой строке */
         header .catchphrase {
             font-size: 1.1rem;
             margin-top: 15px;
@@ -75,7 +73,7 @@
             opacity: 0;
         }
 
-        /* --- КОНТЕЙНЕР --- */
+
         .container {
             max-width: 800px;
             margin: -2rem auto 2rem auto;
@@ -84,7 +82,7 @@
             z-index: 10;
         }
 
-        /* --- КАРТОЧКИ --- */
+
         .card {
             background: var(--card-bg);
             border-radius: 12px;
@@ -92,19 +90,15 @@
             margin-bottom: 1.5rem;
             box-shadow: 0 8px 20px rgba(0,0,0,0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            
-            /* Анимация появления карточек */
+
             opacity: 0;
             animation: slideUp 0.6s ease-out forwards;
         }
-
-        /* Задержка появления для каждой карточки по очереди */
         .card:nth-child(1) { animation-delay: 0.5s; }
         .card:nth-child(2) { animation-delay: 0.7s; }
         .card:nth-child(3) { animation-delay: 0.9s; }
         .card:nth-child(4) { animation-delay: 1.1s; }
 
-        /* Эффект при наведении на карточку */
         .card:hover {
             transform: translateY(-5px) scale(1.01);
             box-shadow: 0 12px 25px rgba(0,0,0,0.12);
@@ -117,7 +111,6 @@
             margin-top: 0;
         }
 
-        /* --- НАВЫКИ --- */
         .skills-list {
             display: flex;
             flex-wrap: wrap;
@@ -137,7 +130,6 @@
             transition: all 0.3s ease;
         }
 
-        /* Анимация прыжка навыка при наведении */
         .skills-list li:hover {
             background: var(--accent-color);
             color: white;
@@ -145,7 +137,7 @@
             box-shadow: 0 4px 10px rgba(0, 80, 200, 0.3);
         }
 
-        /* --- КОНТАКТЫ --- */
+
         .contact-links a {
             display: inline-block;
             margin-right: 15px;
@@ -176,7 +168,7 @@
         <h1>Анна</h1>
         <p class="subtitle">Студентка 1 курса ВШЭ СПб | ПАДИИИ</p>
         
-        <!-- ТА САМАЯ ФРАЗА ОБО МНЕ -->
+
         <p class="catchphrase">✨ Ищу закономерности в данных и хаосе студенческой жизни ✨</p>
     </header>
 
@@ -212,10 +204,10 @@
         <section class="card">
             <h2>Связаться со мной</h2>
             <div class="contact-links">
-                <!-- НЕ ЗАБУДЬ ВСТАВИТЬ СВОИ ССЫЛКИ -->
+
                 <a href="https://github.com/Anufrievaa" target="_blank">Мой GitHub</a>
-                <a href="https://t.me/твой_телеграм" target="_blank">Telegram</a>
-                <a href="mailto:твоя_почта@edu.hse.ru">Email (HSE)</a>
+                <a href="https://t.me/@bebebebbrr" target="_blank">Telegram</a>
+                <a href="mailto:anvaanufrieva@edu.hse.ru">Email (HSE)</a>
             </div>
         </section>
 
